@@ -397,6 +397,8 @@
     # service mounted above.
     - id: ui-schedule
       name: '@deepseek-ai/dsh-client-ui-schedule'
+    - id: ui-workbench
+      name: '@deepseek-ai/dsh-client-ui-workbench'
 
     # Goal surface: GoalBar in the input dock over the goal session projection.
     - id: ui-goal

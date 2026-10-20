@@ -1,0 +1,70 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.header {
+  margin: 0 0 20px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.intro {
+  margin: 4px 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.empty {
+  margin: 24px 0 0;
+  font-size: 13px;
+  opacity: 0.55;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 12px;
+  border: none;
+  border-radius: 12px;
+  background: var(--dsh-bg-raised, #f5f5f5);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.tile:hover {
+  background: var(--dsh-bg-hover, #ececec);
+}
+
+.tile:focus-visible {
+  outline: 2px solid var(--dsh-focus, #4c9ffe);
+  outline-offset: 2px;
+}
+
+.tileIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.tileTitle {
+  font-size: 13px;
+}
